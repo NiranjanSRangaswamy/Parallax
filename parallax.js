@@ -1,0 +1,15 @@
+let text=document.getElementById('text');
+let leaft=document.getElementById('leaf');
+let hill1=document.getElementById('hill1');
+let hill4=document.getElementById('hill4');
+let hill5=document.getElementById('hill5');
+
+window.addEventListener('scroll',()=>{
+    let value=window.scrollY;
+    text.style.marginTop=  value * 2.5 + 'px';
+    leaft.style.top=  value * -1 + 'px';
+    leaft.style.left=  value * 1 + 'px';
+    hill5.style.left=  value * 1.5 + 'px';
+    hill4.style.left=  value * -1.5 + 'px';
+    hill1.style.top=  value *0.8+ 'px';
+}); 
